@@ -1,0 +1,328 @@
+@import url("https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@400;500;700&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  font-family: "Bruno Ace SC", sans-serif;
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.5;
+}
+
+img {
+  vertical-align: middle;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1296px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media screen and (max-width: 1080px) {
+  .container {
+    padding-left: 3em;
+    padding-right: 3em;
+  }
+}
+.header-list .item {
+  width: 286px;
+}
+
+.header-list > .item a {
+  transition: all 0.3s;
+  display: block;
+  padding: 8px 5px;
+}
+.header-list > .item a:hover {
+  color: #00FFA3;
+  transform: translateY(15px);
+  font-weight: bold;
+}
+
+.my-greet .btn {
+  padding: 12px 24px;
+  border-radius: 32px;
+  transition: all 0.3s;
+}
+.my-greet .btn:hover {
+  margin-right: 3rem;
+  border-bottom-right-radius: 50px;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.introduction {
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2023week2/background-img.png?raw=true);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.introduction .left {
+  max-width: calc((100% - 24px) * 0.41);
+}
+.introduction .right {
+  max-width: calc((100% - 24px) * 0.58);
+}
+.introduction .right .intro_pic1, .introduction .right .intro_pic2 {
+  width: 196px;
+}
+.introduction .right .intro_pic3 {
+  width: 306px;
+}
+
+.about_me {
+  gap: 134px;
+}
+.about_me .left {
+  max-width: 636px;
+}
+.about_me .left .me_card {
+  border: 1px solid #E3E3E3;
+  padding: 16px;
+  width: 304px;
+}
+.about_me .right {
+  max-width: 526px;
+}
+
+.social_icon {
+  transition: all 0.3s;
+  border-radius: 40px;
+}
+.social_icon img {
+  width: 162px;
+}
+.social_icon:hover {
+  box-shadow: 0px 0px 16px 8px hsl(238, 100%, 78%);
+}
+
+.my_projects .title {
+  width: 746px;
+  margin-left: auto;
+}
+.my_projects .see_more {
+  transition: all 0.3s;
+}
+.my_projects .see_more:hover {
+  transform: translateX(8px);
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.jcsb {
+  justify-content: space-between;
+}
+
+.jcc {
+  justify-content: center;
+}
+
+.aic {
+  align-items: center;
+}
+
+.fz-20 {
+  font-size: 20px;
+}
+
+.fz-24 {
+  font-size: 24px;
+}
+
+.fz-64 {
+  font-size: 64px;
+}
+
+.fz-128 {
+  font-size: 128px;
+}
+
+.fw-bold {
+  font-weight: bold;
+}
+
+.bg-dark {
+  background-color: #000000;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-end {
+  text-align: end;
+}
+
+.text-dark {
+  color: #000000;
+}
+
+.text-black {
+  color: #15161D;
+}
+
+.text-gray {
+  color: #D1D1D1;
+}
+
+.text-white {
+  color: #ffffff;
+}
+
+.text-light-green {
+  color: #00FFA3;
+}
+
+.bg-dark-gradient {
+  background: linear-gradient(#050014 89%, #050014 100%);
+}
+
+.pt-16 {
+  padding-top: 16px;
+}
+
+.pt-24 {
+  padding-top: 24px;
+}
+
+.pb-24 {
+  padding-bottom: 24px;
+}
+
+.pb-32 {
+  padding-bottom: 32px;
+}
+
+.pb-40 {
+  padding-bottom: 40px;
+}
+
+.py-40 {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.py-96 {
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+
+.py-160 {
+  padding-top: 160px;
+  padding-bottom: 160px;
+}
+
+.mb-4 {
+  margin-bottom: 4px;
+}
+
+.mb-28 {
+  margin-bottom: 28px;
+}
+
+.mb-32 {
+  margin-bottom: 32px;
+}
+
+.mb-36 {
+  margin-bottom: 36px;
+}
+
+.mr-8 {
+  margin-right: 8px;
+}
+
+.mr-24 {
+  margin-right: 24px;
+}
+
+.gap-20 {
+  gap: 20px;
+}
+
+.gap-24 {
+  gap: 24px;
+}
+
+.gap-113 {
+  gap: 113px;
+}
+
+.bottom {
+  position: absolute;
+  bottom: 0;
+}
+
+.p-relative {
+  position: relative;
+}
+
+.btn {
+  display: inline-block;
+  border-radius: 32px;
+  padding: 12px 24px;
+}/*# sourceMappingURL=style.css.map */
